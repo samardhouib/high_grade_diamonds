@@ -360,7 +360,7 @@ def parse_product_page(
         for img_url in images:
             local = download_image(session, img_url, images_dir, prefix=prefix)
             # fall back to remote URL if download fails
-            local_paths.append(local or img_url)
+            local_paths.append(img_url)
         images = local_paths
 
     return {

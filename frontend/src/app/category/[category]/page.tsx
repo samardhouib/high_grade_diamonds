@@ -26,7 +26,7 @@ export default function CategoryPage({
           <div className="flex justify-between items-center py-6">
             <Link href="/" className="flex items-center">
               <Image
-                src="/logo.svg"
+                src="/images/logo.png"
                 alt="HIGH GRADE DIAMONDS"
                 width={280}
                 height={168}

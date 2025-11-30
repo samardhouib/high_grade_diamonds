@@ -27,7 +27,7 @@ export default function Home() {
           <div className="flex items-center justify-between py-6">
             <div className="flex items-center space-x-6">
               <Image
-                src="/logo.svg"
+                src="/images/logo.png"
                 alt="HIGH GRADE DIAMONDS"
                 width={280}
                 height={168}
@@ -61,7 +61,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <Image
-              src="/logo.svg"
+              src="/images/logo.png"
               alt="HIGH GRADE DIAMONDS"
               width={280}
               height={168}

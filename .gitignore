@@ -119,13 +119,7 @@ mongodb_data/
 
 # Screenshots and media (optional)
 screenshots/
-*.png
-*.jpg
-*.jpeg
-*.gif
-*.svg
-*.ico
-*.webp
+
 
 # Package files
 *.tgz

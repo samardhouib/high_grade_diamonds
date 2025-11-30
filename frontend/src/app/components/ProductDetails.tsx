@@ -91,7 +91,7 @@ export default function ProductDetails({ id }: { id: string }) {
           <div className="flex justify-between items-center py-6">
             <Link href="/" className="flex items-center">
               <Image
-                src="/logo.svg"
+                src="/images/logo.png"
                 alt="HIGH GRADE DIAMONDS"
                 width={280}
                 height={168}
@@ -101,7 +101,7 @@ export default function ProductDetails({ id }: { id: string }) {
             </Link>
             <div className="flex items-center space-x-4">
               <Link
-                href={`/category/${encodeURIComponent(product.category)}`}
+                href={`/`}
                 className="text-charcoal hover:text-gold font-medium transition-colors duration-200 flex items-center uppercase tracking-wider text-sm"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
@@ -126,7 +126,7 @@ export default function ProductDetails({ id }: { id: string }) {
                     className="relative aspect-square bg-darkbg rounded-lg overflow-hidden border border-borderlight"
                   >
                     <Image
-                      src={`http://localhost:8000/images/${image}`}
+                      src={`/images/${image}`}
                       alt={`${product.title} - Image ${index + 1}`}
                       fill
                       className="object-contain"
@@ -222,6 +222,15 @@ export default function ProductDetails({ id }: { id: string }) {
                 </div>
               </div>
             )}
+
+            <div className="flex justify-start mt-8">
+              <Link
+                href={`/contact?product=${encodeURIComponent(product.title)}&id=${product._id}`}
+                className="px-6 py-3 bg-gold text-white rounded-lg hover:bg-gold-700 transition-colors duration-200 text-lg font-medium shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+              >
+                Buy
+              </Link>
+            </div>
           </div>
         </div>
       </main>
